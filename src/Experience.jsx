@@ -167,7 +167,7 @@ export default function Experience()
                 0.02
         ]}/>
         <Physics debug={window.location.hash}>
-            {/* <RigidBody
+            <RigidBody
                 type="fixed"
                 restitution={0.2}
                 friction={0.7}
@@ -178,9 +178,9 @@ export default function Experience()
                     scale={[24, 0.5, 24]}
                 > 
                     <boxGeometry />
-                    <meshPhongMaterial color="brown" />
+                    <meshPhongMaterial color="brown" transparent opacity={0.4} />
                 </mesh>
-            </RigidBody> */}
+            </RigidBody>
             <group
                 ref={arrowOriginRef}
                 position={camera.position.clone()}
